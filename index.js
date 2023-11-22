@@ -44,6 +44,13 @@ function names(obj) {
   return `Castles: ${names.map((el) => `${el[0].toUpperCase()}${el.slice(1)}`).sort().join(', ')}`;
 }
 
+// ## 3 шаг
+// Выведите существо с самым большим здоровьем.
+const maxHealth = (obj) => {
+  const res = _.clone(obj);
+  return `Largest hp: ${res.sort((a, b) => b.Health - a.Health)[0].Unit}`;
+};
+
 // bin/heroes.js __fixtures__/heroes1.csv
 // Count: 10
 // Castles: Замок, Оплот
