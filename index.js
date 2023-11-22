@@ -50,6 +50,28 @@ const maxHealth = (obj) => {
   const res = _.clone(obj);
   return `Largest hp: ${res.sort((a, b) => b.Health - a.Health)[0].Unit}`;
 };
+// ## 4 шаг
+// Выведите средний арифметический урон для каждого существа в таблице.
+// Если цифры две, то их нужно сложить и разделить на 2. Если цифра одна - просто вернуть ее.
+function averageDamage(obj) {
+  // eslint-disable-next-line no-shadow
+  const averageDamage = obj.map((el) => {
+    if (el.Damage.includes('-')) {
+      const values = el.Damage.split('-');
+      return {
+        Name: el.Unit,
+        Damage: ((Number(values[0]) + Number(values[1])) / 2),
+        Health: el.Health,
+      };
+    }
+    return {
+      Name: el.Unit,
+      Damage: Number(el.Damage),
+      Health: el.Health,
+    };
+  });
+  return averageDamage;
+}
 
 // bin/heroes.js __fixtures__/heroes1.csv
 // Count: 10
