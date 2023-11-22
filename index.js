@@ -72,7 +72,20 @@ function averageDamage(obj) {
   });
   return averageDamage;
 }
-
+// ## 5 шаг
+// Найдите самое сильное существо.Вам следует найти всех существ 7 уровня и выяснить,
+// кто из них быстрее исчерпает здоровье врага своими атаками.
+// Атаку нужно посчитать как среднее значение между мнимальным и максимальным уроном.
+// Важно(!) - таких существ всегда
+// 2. C технической точки зрения вам нужно посчитать у кого из существ уйдет меньше атак для того,
+// чтобы исчерпать здоровье врага.
+function Strongest(obj) {
+  const sortedByLevel = obj.filter(({ Level }) => Level === 7);
+  const withAverage = averageDamage(sortedByLevel);
+  const first = withAverage[0].Health / withAverage[1].Damage;
+  const second = withAverage[1].Health / withAverage[0].Damage;
+  return first > second ? `Strongest creature: ${withAverage[0].Name}` : `Strongest creature: ${withAverage[1].Name}`;
+}
 // bin/heroes.js __fixtures__/heroes1.csv
 // Count: 10
 // Castles: Замок, Оплот
