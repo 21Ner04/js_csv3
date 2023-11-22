@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/Oji3sQOv)
 # Требования
 
 * Нельзя менять уже написанный код, тесты и другие файлы добавленные в проект
@@ -80,19 +79,6 @@ Largest hp: ангел
 Average damage: кентавр: 2.5, копейщик: 2, лучник: 2.5, грифон: 4.5, рыцарь: 7.5, единорог: 20, дракон: 47.5, монах: 11, кавалерист: 20, ангел: 50
 Strongest creature: ангел
 ```
-
-# Список доступных сайтов
-
-- [Javascript](https://developer.mozilla.org/ru/docs/Learn/JavaScript)
-- [Web development](https://developer.mozilla.org/en-US/docs/Learn)
-- [Node](https://nodejs.org/ru/docs)
-- [Hexlet](https://hexlet.io)
-- [NPM](https://docs.npmjs.com/)
-- [lodash](https://lodash.com/docs)
-- [Github](https://github.com/)
-- [Github Classrom](https://classroom.github.com/)
-- [Github Docs](https://docs.github.com/ru)
-- [ESLint](https://eslint.org/docs/latest/)
 
 # Примечание
 
