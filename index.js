@@ -34,6 +34,16 @@ function converToObject(content) {
 // Посчитайте количество существ в таблице
 const count = (obj) => `Count: ${obj.length}`;
 
+// ## 2 шаг
+// Выведите все виды замков существ через запятую.
+// eslint-disable-next-line max-len
+// Сделайте так, чтобы имя каждого замка начиналось с большой буквы.Отсортируйте список перед выводом.
+function names(obj) {
+  // eslint-disable-next-line no-shadow
+  const names = _.uniq(obj.map(({ Tower }) => Tower.toLowerCase()));
+  return `Castles: ${names.map((el) => `${el[0].toUpperCase()}${el.slice(1)}`).sort().join(', ')}`;
+}
+
 // bin/heroes.js __fixtures__/heroes1.csv
 // Count: 10
 // Castles: Замок, Оплот
